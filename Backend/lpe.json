@@ -1,0 +1,230 @@
+{
+    "info": {
+        "_postman_id": "new-id-for-collection",
+        "name": "eshop API LPE - Filme e Genero",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "_exporter_id": "10292792"
+    },
+    "item": [
+        {
+            "name": "get generos",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "localhost:3002/genero",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3002",
+                    "path": [
+                        "genero"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "add genero",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{ \"nome\" : \"teste inserir genero\", \"descricao\": \"Descrição do gênero\" }",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "localhost:3002/genero",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3002",
+                    "path": [
+                        "genero"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "update genero",
+            "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n        \"id\": 1,\n        \"nome\": \"teste alterar genero\",\n        \"descricao\": \"Descrição alterada\"\n    }",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "localhost:3002/genero",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3002",
+                    "path": [
+                        "genero"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "delete genero",
+            "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                    "raw": "localhost:3002/genero/1",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3002",
+                    "path": [
+                        "genero",
+                        "1"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "get genero por id",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "localhost:3002/genero/1",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3002",
+                    "path": [
+                        "genero",
+                        "1"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "get filmes",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "localhost:3002/filme",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3002",
+                    "path": [
+                        "filme"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "add filme",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{ \"titulo\" : \"teste inserir filme\", \"descricao\": \"Descrição do filme\", \"ano_lancamento\": 2023, \"genero_id\": 1 }",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "localhost:3002/filme",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3002",
+                    "path": [
+                        "filme"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "update filme",
+            "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n        \"id\": 1,\n        \"titulo\": \"teste alterar filme\",\n        \"descricao\": \"Descrição alterada\",\n        \"ano_lancamento\": 2024,\n        \"genero_id\": 2\n    }",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "localhost:3002/filme",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3002",
+                    "path": [
+                        "filme"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "delete filme",
+            "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                    "raw": "localhost:3002/filme/1",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3002",
+                    "path": [
+                        "filme",
+                        "1"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "get filme por id",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "localhost:3002/filme/1",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3002",
+                    "path": [
+                        "filme",
+                        "1"
+                    ]
+                }
+            },
+            "response": []
+        }
+    ]
+}
